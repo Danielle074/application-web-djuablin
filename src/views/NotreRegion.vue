@@ -14,10 +14,10 @@
             Terre d'histoire, de culture et d'avenir, au cœur de l'Est de la Côte d'Ivoire.
           </p>
           <p class="text-sm sm:text-base text-slate-600 leading-relaxed max-w-2xl">
-            Située à l'est du pays, la région de l'Indénié-Djuablin regroupe plusieurs départements et
-            communes. Elle est connue pour sa richesse agricole, son dynamisme commercial et la
-            diversité de ses cultures. Abengourou, son chef-lieu, en est la capitale administrative
-            et économique.
+            Située à l'est de la Côte d'Ivoire, la région de l'Indénié-Djuablin regroupe les
+            départements d'Abengourou, d'Agnibilékrou et de Bettié. Elle est connue pour sa
+            richesse agricole, son dynamisme commercial et la diversité de ses cultures.
+            Abengourou, son chef-lieu, en est la capitale administrative et économique.
           </p>
         </div>
 
@@ -49,7 +49,7 @@
           <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Région</p>
         </div>
         <div class="space-y-1">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">6+</h2>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">3</h2>
           <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Départements</p>
         </div>
         <div class="space-y-1">
@@ -79,14 +79,16 @@
           </div>
           <div class="lg:col-span-7 space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
             <p>
-              La région de l'Indénié-Djuablin est située dans le district de la Comoé, à l'est de la
-              Côte d'Ivoire. Elle est frontalière du Ghana au sud-est et occupe une position
-              stratégique sur les axes de communication vers le centre et le nord du pays.
+              La région de l'Indénié-Djuablin est située à l'est de la Côte d'Ivoire, dans le
+              district de la Comoé. Elle est frontalière du Ghana à l'est et occupe une position
+              stratégique sur les axes de communication reliant le sud forestier au centre et au
+              nord du pays.
             </p>
             <p>
               Son relief est majoritairement composé de plaines et de bas-plateaux, avec un climat
               tropical humide favorable à l'agriculture. La région est traversée par plusieurs cours
-              d'eau et bénéficie de terres fertiles propices aux cultures de rente et vivrières.
+              d'eau (dont le Comoé et la Bia) et bénéficie de terres fertiles propices aux cultures
+              de rente et vivrières.
             </p>
             <div class="grid grid-cols-2 gap-4 pt-2">
               <div class="bg-[#f8f7fe] border border-[#d1d1d1]/40 rounded-xl p-4">
@@ -107,7 +109,7 @@
     <section class="py-16 bg-white border-y border-[#d1d1d1]/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-12">
-          Les Départements
+          Les Départements de l'Indénié-Djuablin
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           <Card class="bg-[#f8f7fe] rounded-2xl p-6 border border-[#d1d1d1]/40 shadow-sm">
@@ -124,9 +126,10 @@
             <div class="bg-[#117647] text-white p-3 rounded-lg w-fit mb-4">
               <MapPin class="w-6 h-6" />
             </div>
-            <h3 class="text-lg font-bold text-slate-900 mb-2">Aboisso-Comoé</h3>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Agnibilékrou</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
-              Zone forestière et agricole, réputée pour ses plantations et sa production de cacao.
+              Zone forestière et agricole, réputée pour ses plantations de cacao et sa position
+              frontalière avec le Ghana.
             </p>
           </Card>
 
@@ -134,9 +137,10 @@
             <div class="bg-[#117647] text-white p-3 rounded-lg w-fit mb-4">
               <MapPin class="w-6 h-6" />
             </div>
-            <h3 class="text-lg font-bold text-slate-900 mb-2">Betté</h3>
+            <h3 class="text-lg font-bold text-slate-900 mb-2">Bettié</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
-              Département frontalier du Ghana, avec un fort potentiel agricole et commercial.
+              Département situé au sud de la région, avec un fort potentiel agricole (cacao, hévéa)
+              et des paysages naturels préservés.
             </p>
           </Card>
         </div>
@@ -147,13 +151,13 @@
     <section class="py-16">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-12">
-          Culture & Patrimoine
+          Culture & Patrimoine de l'Indénié-Djuablin
         </h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div class="relative group rounded-2xl overflow-hidden shadow-md border border-[#d1d1d1]/30 h-72">
             <img
               :src="cultureRegion"
-              alt="Culture de la région"
+              alt="Traditions et danses de l'Indénié-Djuablin"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex items-end">
@@ -166,7 +170,7 @@
           <div class="relative group rounded-2xl overflow-hidden shadow-md border border-[#d1d1d1]/30 h-72">
             <img
               :src="marcheRegion"
-              alt="Marché de la région"
+              alt="Marchés de l'Indénié-Djuablin"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex items-end">
@@ -179,7 +183,7 @@
           <div class="relative group rounded-2xl overflow-hidden shadow-md border border-[#d1d1d1]/30 h-72">
             <img
               :src="artisanatRegion"
-              alt="Artisanat de la région"
+              alt="Artisanat de l'Indénié-Djuablin"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex items-end">
@@ -192,7 +196,7 @@
           <div class="relative group rounded-2xl overflow-hidden shadow-md border border-[#d1d1d1]/30 h-72">
             <img
               :src="gastronomieRegion"
-              alt="Gastronomie de la région"
+              alt="Gastronomie de l'Indénié-Djuablin"
               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
             />
             <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent p-6 flex items-end">
@@ -209,7 +213,7 @@
     <section class="py-16 bg-white border-y border-[#d1d1d1]/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 class="text-2xl sm:text-3xl font-bold text-center text-slate-900 mb-12">
-          Potentialités Économiques
+          Potentialités Économiques de l'Indénié-Djuablin
         </h2>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
           <div class="bg-[#117647] text-white rounded-xl p-6 shadow hover:shadow-lg transition-all duration-300 flex flex-col justify-between h-56">
@@ -275,10 +279,10 @@
         </p>
         <div class="flex flex-wrap justify-center gap-4 pt-2">
           <RouterLink
-            to="/projets"
+            to="/realisations"
             class="inline-flex items-center gap-2 bg-[#f1ba46] hover:bg-[#e0a935] text-slate-900 font-semibold px-8 py-3 rounded-lg shadow transition-all"
           >
-            Voir nos projets
+            Voir nos réalisations
             <ArrowRight class="w-4 h-4" />
           </RouterLink>
           <RouterLink
@@ -309,7 +313,7 @@ import {
 import { Card } from '@/components/ui/card'
 
 // Importation des images (à placer dans src/assets/images/)
-import carteRegion from '@/assets/images/hero-home.png' // réutilisée, remplacez par une vraie carte
+import carteRegion from '@/assets/images/hero-home.png' // remplacez par une vraie carte
 import paysageRegion from '@/assets/images/paysage.jpg'
 import cultureRegion from '@/assets/images/culture.jpg'
 import marcheRegion from '@/assets/images/marche.jpg'

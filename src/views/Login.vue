@@ -1,11 +1,14 @@
 <template>
   <div class="min-h-screen flex">
     <!-- Colonne gauche : formulaire -->
-    <div class="w-full lg:w-1/2 flex items-center justify-center bg-[#f8f7fe] px-6 py-12">
-      <div class="w-full max-w-md space-y-8">
+    <div class="w-full lg:w-1/2 flex items-center justify-center bg-[#f8f7fe] px-6 py-12 relative overflow-hidden">
+      <!-- Décoration de fond subtile -->
+      <div class="absolute -top-24 -left-24 w-72 h-72 rounded-full bg-[#117647]/5 blur-3xl"></div>
+      <div class="absolute -bottom-24 -right-24 w-72 h-72 rounded-full bg-[#f1ba46]/10 blur-3xl"></div>
+
+      <div class="relative w-full max-w-md space-y-8">
         <!-- Logo / En-tête -->
         <div class="text-center space-y-4">
-          <!-- Logo bien grand, centré -->
           <RouterLink to="/" class="inline-block">
             <img
               :src="logoDjuablin"
@@ -14,33 +17,41 @@
             />
           </RouterLink>
 
-          <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
-            Bienvenue
-          </h1>
-          <p class="text-sm text-slate-600">
-            Connectez-vous à votre espace pour accéder à vos services.
-          </p>
+          <div class="space-y-2">
+            <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-900">
+              Bienvenue
+            </h1>
+            <p class="text-sm text-slate-600">
+              Connectez-vous à votre espace personnel
+            </p>
+          </div>
         </div>
 
         <!-- Formulaire -->
-        <Card class="bg-white rounded-2xl p-6 sm:p-8 border border-[#d1d1d1]/40 shadow-sm">
-          <form @submit.prevent="handleSubmit" class="space-y-5">
+        <Card class="bg-white rounded-3xl p-6 sm:p-8 border border-[#d1d1d1]/40 shadow-xl shadow-[#117647]/5 relative">
+       
+
+          <form @submit.prevent="handleSubmit" class="space-y-5 pt-3">
+            <!-- Email avec label flottant stylisé -->
             <div>
               <label class="block text-sm font-semibold text-slate-700 mb-2">
-                Email <span class="text-red-500">*</span>
+                Adresse email <span class="text-red-500">*</span>
               </label>
-              <div class="relative">
-                <Mail class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <div class="relative group">
+                <div class="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-[#117647]/10 flex items-center justify-center group-focus-within:bg-[#117647] transition-colors">
+                  <Mail class="w-4 h-4 text-[#117647] group-focus-within:text-white transition-colors" />
+                </div>
                 <input
                   v-model="form.email"
                   type="email"
                   required
                   placeholder="votre@email.com"
-                  class="w-full pl-10 pr-4 py-3 rounded-lg border border-[#d1d1d1] bg-[#f8f7fe] text-sm text-slate-800 focus:outline-none focus:border-[#117647] focus:ring-2 focus:ring-[#117647]/20 transition-all"
+                  class="w-full pl-14 pr-4 py-3.5 rounded-xl border border-[#d1d1d1] bg-[#f8f7fe] text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#117647] focus:bg-white focus:ring-4 focus:ring-[#117647]/10 transition-all"
                 />
               </div>
             </div>
 
+            <!-- Mot de passe -->
             <div>
               <div class="flex items-center justify-between mb-2">
                 <label class="block text-sm font-semibold text-slate-700">
@@ -50,19 +61,21 @@
                   Mot de passe oublié ?
                 </a>
               </div>
-              <div class="relative">
-                <Lock class="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-slate-400" />
+              <div class="relative group">
+                <div class="absolute left-3 top-1/2 -translate-y-1/2 w-8 h-8 rounded-lg bg-[#117647]/10 flex items-center justify-center group-focus-within:bg-[#117647] transition-colors">
+                  <Lock class="w-4 h-4 text-[#117647] group-focus-within:text-white transition-colors" />
+                </div>
                 <input
                   v-model="form.password"
                   :type="showPassword ? 'text' : 'password'"
                   required
                   placeholder="••••••••"
-                  class="w-full pl-10 pr-12 py-3 rounded-lg border border-[#d1d1d1] bg-[#f8f7fe] text-sm text-slate-800 focus:outline-none focus:border-[#117647] focus:ring-2 focus:ring-[#117647]/20 transition-all"
+                  class="w-full pl-14 pr-12 py-3.5 rounded-xl border border-[#d1d1d1] bg-[#f8f7fe] text-sm text-slate-800 placeholder-slate-400 focus:outline-none focus:border-[#117647] focus:bg-white focus:ring-4 focus:ring-[#117647]/10 transition-all"
                 />
                 <button
                   type="button"
                   @click="showPassword = !showPassword"
-                  class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-[#117647] transition-colors"
+                  class="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-[#117647] transition-colors p-1"
                   :aria-label="showPassword ? 'Masquer le mot de passe' : 'Afficher le mot de passe'"
                 >
                   <EyeOff v-if="showPassword" class="w-4 h-4" />
@@ -71,22 +84,25 @@
               </div>
             </div>
 
-            <div class="flex items-center gap-2">
-              <input
-                id="remember"
-                v-model="form.remember"
-                type="checkbox"
-                class="w-4 h-4 rounded border-[#d1d1d1] text-[#117647] focus:ring-[#117647]/30"
-              />
-              <label for="remember" class="text-sm text-slate-600">
-                Se souvenir de moi
-              </label>
+            <!-- Se souvenir -->
+            <div class="flex items-center justify-between">
+              <div class="flex items-center gap-2">
+                <input
+                  id="remember"
+                  v-model="form.remember"
+                  type="checkbox"
+                  class="w-4 h-4 rounded border-[#d1d1d1] text-[#117647] focus:ring-[#117647]/30"
+                />
+                <label for="remember" class="text-sm text-slate-600 cursor-pointer">
+                  Se souvenir de moi
+                </label>
+              </div>
             </div>
 
             <!-- Message d'erreur -->
             <div
               v-if="erreur"
-              class="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-lg flex items-center gap-2"
+              class="bg-red-50 border border-red-200 text-red-700 text-sm px-4 py-3 rounded-xl flex items-center gap-2"
             >
               <AlertCircle class="w-5 h-5 shrink-0" />
               {{ erreur }}
@@ -95,13 +111,14 @@
             <button
               type="submit"
               :disabled="envoiEnCours"
-              class="inline-flex items-center justify-center gap-2 w-full bg-[#f1ba46] hover:bg-[#e0a935] disabled:opacity-60 disabled:cursor-not-allowed text-slate-900 font-semibold px-6 py-3 rounded-lg shadow transition-all"
+              class="group inline-flex items-center justify-center gap-2 w-full bg-[#117647] hover:bg-[#0d5c37] disabled:opacity-60 disabled:cursor-not-allowed text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg shadow-[#117647]/20 transition-all"
             >
               <span>{{ envoiEnCours ? 'Connexion...' : 'Se connecter' }}</span>
-              <LogIn v-if="!envoiEnCours" class="w-4 h-4" />
+              <LogIn v-if="!envoiEnCours" class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </button>
           </form>
 
+          <!-- Séparateur -->
           <div class="mt-6 pt-6 border-t border-[#d1d1d1]/40 text-center">
             <p class="text-sm text-slate-600">
               Vous n'avez pas de compte ?
@@ -114,7 +131,10 @@
 
         <!-- Retour accueil -->
         <div class="text-center">
-          <RouterLink to="/" class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#117647] transition-colors">
+          <RouterLink
+            to="/"
+            class="inline-flex items-center gap-2 text-sm font-semibold text-slate-600 hover:text-[#117647] transition-colors"
+          >
             <ArrowLeft class="w-4 h-4" />
             Retour à l'accueil
           </RouterLink>
@@ -123,19 +143,19 @@
     </div>
 
     <!-- Colonne droite : image -->
-    <div class="hidden lg:flex lg:w-1/2 relative bg-[#117647]">
+    <div class="hidden lg:flex lg:w-1/2 relative bg-[#117647] overflow-hidden">
       <img
         :src="loginImage"
         alt="Conseil Régional de l'Indénié-Djuablin"
         class="absolute inset-0 w-full h-full object-cover"
       />
-      <!-- Overlay dégradé pour lisibilité -->
-      <div class="absolute inset-0 bg-gradient-to-t from-[#117647]/95 via-[#117647]/60 to-[#117647]/30"></div>
+      <!-- Overlay dégradé TRÈS léger, uniquement en bas pour la lisibilité du texte -->
+      <div class="absolute inset-0 bg-gradient-to-t from-[#117647]/70 via-[#117647]/10 to-transparent"></div>
 
       <!-- Contenu superposé -->
       <div class="relative z-10 flex flex-col justify-end p-12 text-white space-y-4">
-        <Quote class="w-8 h-8 text-[#f1ba46]" />
-        <p class="text-xl sm:text-2xl font-bold leading-snug max-w-md">
+        <Quote class="w-8 h-8 text-[#f1ba46] drop-shadow-lg" />
+        <p class="text-xl sm:text-2xl font-bold leading-snug max-w-md drop-shadow-md">
           « La Réussite appartient à tout le monde. C'est au travail d'équipe qu'revient le mérite... »
         </p>
         <div class="pt-2">

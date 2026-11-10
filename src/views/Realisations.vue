@@ -14,7 +14,8 @@
         </p>
         <p class="text-sm sm:text-base text-slate-600 max-w-2xl mx-auto leading-relaxed">
           Découvrez les projets réalisés par le Conseil Régional dans les domaines de l'éducation,
-          de la santé, des infrastructures et de l'agriculture.
+          de la santé, des infrastructures et de l'agriculture, dans les départements d'Abengourou,
+          d'Agnibilékrou et de Bettié.
         </p>
       </div>
     </section>
@@ -128,13 +129,15 @@
               Aménagement de la voirie urbaine d'Abengourou
             </h3>
             <p>
-              Dans le cadre de son programme de désenclavement, le Conseil Régional a engagé
-              l'aménagement de plusieurs axes routiers structurants de la ville d'Abengourou,
-              facilitant la mobilité des populations et le transport des productions agricoles.
+              Dans le cadre de son programme de désenclavement, le Conseil Régional de
+              l'Indénié-Djuablin a engagé l'aménagement de plusieurs axes routiers structurants
+              de la ville d'Abengourou, facilitant la mobilité des populations et le transport
+              des productions agricoles.
             </p>
             <p>
               Ce projet s'inscrit dans une dynamique globale de modernisation des infrastructures
-              régionales, avec un accent particulier sur l'accès aux services publics de base.
+              régionales, avec un accent particulier sur l'accès aux services publics de base
+              pour les habitants de la région.
             </p>
             <div class="grid grid-cols-2 gap-4 pt-2">
               <div class="bg-[#f8f7fe] border border-[#d1d1d1]/40 rounded-xl p-4">
@@ -164,8 +167,8 @@
             </div>
             <h3 class="text-lg font-bold text-slate-900 mb-2">Des milliers de bénéficiaires</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
-              Les projets touchent directement les populations en matière d'accès aux services
-              de base, d'emploi et de formation.
+              Les projets touchent directement les populations de l'Indénié-Djuablin en matière
+              d'accès aux services de base, d'emploi et de formation.
             </p>
           </Card>
 
@@ -176,7 +179,7 @@
             <h3 class="text-lg font-bold text-slate-900 mb-2">Un développement durable</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
               Chaque réalisation est pensée pour s'inscrire dans la durée et soutenir la
-              croissance économique locale.
+              croissance économique locale de la région.
             </p>
           </Card>
 
@@ -186,8 +189,8 @@
             </div>
             <h3 class="text-lg font-bold text-slate-900 mb-2">Un partenariat actif</h3>
             <p class="text-sm text-slate-600 leading-relaxed">
-              Le Conseil travaille avec l'État, les communes et les partenaires techniques
-              et financiers.
+              Le Conseil Régional travaille avec l'État, les communes et les partenaires
+              techniques et financiers pour le développement de l'Indénié-Djuablin.
             </p>
           </Card>
         </div>
@@ -202,7 +205,7 @@
         </h2>
         <p class="text-emerald-100 text-sm sm:text-base max-w-2xl mx-auto">
           Consultez nos rapports d'activités ou contactez nos services pour toute information
-          complémentaire.
+          complémentaire sur les projets du Conseil Régional de l'Indénié-Djuablin.
         </p>
         <div class="flex flex-wrap justify-center gap-4 pt-2">
           <RouterLink
@@ -261,12 +264,12 @@ const activeCategory = ref('Toutes')
 // Liste des réalisations
 const realisations = [
   {
-    titre: "Réhabilitation de l'école primaire de Niangon",
+    titre: "Réhabilitation de l'école primaire d'Abengourou",
     categorie: 'Éducation',
-    lieu: 'Niangon',
+    lieu: 'Abengourou',
     annee: '2025',
     statut: 'Achevé',
-    description: "Rénovation complète des bâtiments scolaires, construction de latrines et équipement en mobilier pour améliorer les conditions d'apprentissage.",
+    description: "Rénovation complète des bâtiments scolaires, construction de latrines et équipement en mobilier pour améliorer les conditions d'apprentissage des élèves de la région.",
     image: realisationEcole,
   },
   {
@@ -275,71 +278,71 @@ const realisations = [
     lieu: 'Abengourou',
     annee: '2025',
     statut: 'Achevé',
-    description: "Dotation en équipements médicaux, réhabilitation des locaux et appui à la formation du personnel soignant.",
+    description: "Dotation en équipements médicaux, réhabilitation des locaux et appui à la formation du personnel soignant du chef-lieu de l'Indénié-Djuablin.",
     image: realisationSante,
   },
   {
-    titre: "Aménagement de la voirie urbaine",
+    titre: "Aménagement de la voirie urbaine d'Abengourou",
     categorie: 'Infrastructures',
     lieu: 'Abengourou',
     annee: '2025-2026',
     statut: 'En cours',
-    description: "Bitumage et aménagement de plusieurs axes structurants de la ville pour faciliter la mobilité et le commerce.",
+    description: "Bitumage et aménagement de plusieurs axes structurants de la ville pour faciliter la mobilité et le commerce dans la région.",
     image: realisationRoute,
   },
   {
-    titre: "Programme d'appui aux producteurs agricoles",
+    titre: "Programme d'appui aux producteurs agricoles de Bettié",
     categorie: 'Agriculture',
-    lieu: 'Betté',
+    lieu: 'Bettié',
     annee: '2024',
     statut: 'Achevé',
-    description: "Distribution de semences améliorées, formation aux bonnes pratiques agricoles et appui à la commercialisation.",
+    description: "Distribution de semences améliorées, formation aux bonnes pratiques agricoles et appui à la commercialisation pour les producteurs du département de Bettié.",
     image: realisationAgriculture,
   },
   {
-    titre: "Construction du marché moderne de Betté",
+    titre: "Construction du marché moderne de Bettié",
     categorie: 'Infrastructures',
-    lieu: 'Betté',
+    lieu: 'Bettié',
     annee: '2024',
     statut: 'Achevé',
-    description: "Un marché moderne équipé pour soutenir les activités commerciales et améliorer les conditions de travail des commerçants.",
+    description: "Un marché moderne équipé pour soutenir les activités commerciales et améliorer les conditions de travail des commerçants de Bettié.",
     image: realisationMarche,
   },
   {
-    titre: "Équipement de salles de classe à Aboisso-Comoé",
+    titre: "Équipement de salles de classe à Agnibilékrou",
     categorie: 'Éducation',
-    lieu: 'Aboisso-Comoé',
+    lieu: 'Agnibilékrou',
     annee: '2024',
     statut: 'Achevé',
-    description: "Dotation en tables-bancs, tableaux et matériels pédagogiques pour plusieurs établissements de la région.",
+    description: "Dotation en tables-bancs, tableaux et matériels pédagogiques pour plusieurs établissements du département d'Agnibilékrou.",
     image: projet1,
   },
   {
-    titre: "Campagne de sensibilisation sanitaire",
+    titre: "Campagne de sensibilisation sanitaire dans l'Indénié-Djuablin",
     categorie: 'Santé',
     lieu: 'Région',
     annee: '2024',
     statut: 'Achevé',
-    description: "Campagnes de sensibilisation sur l'hygiène, la prévention et l'accès aux soins dans les communautés rurales.",
+    description: "Campagnes de sensibilisation sur l'hygiène, la prévention et l'accès aux soins dans les communautés rurales de la région.",
     image: actualite1,
   },
   {
-    titre: "Appui à la filière cacao",
+    titre: "Appui à la filière cacao de l'Indénié-Djuablin",
     categorie: 'Agriculture',
     lieu: 'Région',
     annee: '2023-2024',
     statut: 'Achevé',
-    description: "Accompagnement des coopératives, formation à la transformation et appui à l'accès aux marchés.",
-    image: projet3,            // ← projet3 utilisé ici
+    description: "Accompagnement des coopératives, formation à la transformation et appui à l'accès aux marchés pour les producteurs de cacao de la région.",
+    image: projet3,
   },
   {
-    titre: "Réunion de coordination avec les partenaires",
+    titre: "Réunion de coordination avec les partenaires du Conseil Régional",
     categorie: 'Infrastructures',
     lieu: 'Abengourou',
     annee: '2024',
     statut: 'Achevé',
-    description: "Rencontres de travail avec les partenaires techniques et financiers pour la planification des projets structurants.",
-    image: presidentDjuablin,  // ← presidentDjuablin utilisé ici
+    description: "Rencontres de travail avec les partenaires techniques et financiers pour la planification des projets structurants de l'Indénié-Djuablin.",
+    image: presidentDjuablin,
   },
   {
     titre: "Cérémonie de remise de prix et de reconnaissance",
@@ -347,8 +350,8 @@ const realisations = [
     lieu: 'Région',
     annee: '2024',
     statut: 'Achevé',
-    description: "Cérémonie de distinction des meilleurs élèves et enseignants de la région, en présence des autorités.",
-    image: actualite2,         // ← actualite2 utilisé
+    description: "Cérémonie de distinction des meilleurs élèves et enseignants de la région, en présence des autorités du Conseil Régional.",
+    image: actualite2,
   },
   {
     titre: "Lancement du programme agricole régional",
@@ -356,8 +359,8 @@ const realisations = [
     lieu: 'Région',
     annee: '2025',
     statut: 'En cours',
-    description: "Nouveau programme d'appui aux jeunes agriculteurs avec financement et accompagnement technique.",
-    image: actualite3,         // ← actualite3 utilisé
+    description: "Nouveau programme d'appui aux jeunes agriculteurs de l'Indénié-Djuablin avec financement et accompagnement technique.",
+    image: actualite3,
   },
 ]
 

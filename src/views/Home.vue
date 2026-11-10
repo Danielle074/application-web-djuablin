@@ -13,19 +13,18 @@
             Une vision, des actions concrètes et un engagement au service des populations.
           </p>
           <div class="flex flex-wrap items-center gap-4 pt-2">
-            <!-- Exemple de RouterLink avec un bouton stylisé -->
             <RouterLink 
-              to="/projets" 
+              to="/realisations" 
               class="bg-[#f1ba46] hover:bg-[#e0a935] text-slate-900 font-semibold px-6 py-3 rounded-lg shadow transition-all inline-block text-center"
             >
-              Nos projets
+              Nos réalisations
             </RouterLink>
 
             <RouterLink 
-              to="/plus" 
+              to="/conseil-regional" 
               class="border border-[#d1d1d1] text-slate-700 hover:border-[#117647] hover:text-[#117647] font-medium px-6 py-3 rounded-lg flex items-center gap-2 bg-white transition-all"
             >
-              <span>Voir plus</span>
+              <span>En savoir plus</span>
               <ArrowRight class="w-4 h-4" />
             </RouterLink>
           </div>
@@ -53,20 +52,20 @@
     <section class="py-10 bg-white border-y border-[#d1d1d1]/30">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
         <div class="space-y-1">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">1m</h2>
-          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Lorem Ipsum dolor sit</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">+120</h2>
+          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Projets réalisés</p>
         </div>
         <div class="space-y-1">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">2.6k</h2>
-          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Lorem Ipsum dolor sit</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">+45</h2>
+          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Écoles réhabilitées</p>
         </div>
         <div class="space-y-1">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">30</h2>
-          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Lorem Ipsum dolor sit</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">+30</h2>
+          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Centres de santé appuyés</p>
         </div>
         <div class="space-y-1">
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">+90</h2>
-          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Lorem Ipsum dolor sit</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-[#f1ba46]">+200 km</h2>
+          <p class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Voies aménagées</p>
         </div>
       </div>
     </section>
@@ -83,7 +82,13 @@
           </div>
           <div class="lg:col-span-6 space-y-4 text-slate-600 text-sm sm:text-base leading-relaxed">
             <p>
-              En marge de la célébration de la 62e année de l'accession à l'indépendance de notre pays, le Premier Vice-président du Conseil Régional du Poro Lamine DOUMBIA, avec à ses côtés le Conseiller Régional et Secrétaire Départemental Sylla BAMADOUBA ainsi que le Directeur Général de l'Administration Kassimi DEMBÉLÉ, a visité les chantiers de notre institution dans la ville de Niangon pour s'enquérir de leur état d'exécution.
+              Chères populations de l'Indénié-Djuablin, c'est avec un profond engagement que le Conseil Régional
+              poursuit sa mission au service du développement de notre territoire. Chaque projet que nous portons
+              traduit notre volonté de bâtir une région plus juste, plus prospère et plus solidaire.
+            </p>
+            <p>
+              Nous travaillons main dans la main avec les communes, les partenaires techniques et financiers et
+              l'ensemble des acteurs locaux pour répondre aux besoins prioritaires de nos concitoyens.
             </p>
             <p class="italic text-slate-700 font-medium">
               « La Réussite appartient à tout le monde. C'est au travail d'équipe qu'revient le mérite... »
@@ -111,7 +116,7 @@
             <div>
               <h3 class="text-xl font-bold mb-2">Éducation</h3>
               <p class="text-xs text-emerald-100 line-clamp-2">
-                C3 uell ntearis, egnolas nisl, gravida nec, omare id, mi.
+                Construction d'écoles, équipements et appui à la scolarisation des enfants.
               </p>
             </div>
           </div>
@@ -123,7 +128,7 @@
             <div>
               <h3 class="text-xl font-bold mb-2">Santé</h3>
               <p class="text-xs text-emerald-100 line-clamp-2">
-                C3 uell ntearis, egnolas nisl, gravida nec, omare id, mi.
+                Appui aux centres de santé, équipements médicaux et sensibilisation.
               </p>
             </div>
           </div>
@@ -135,7 +140,7 @@
             <div>
               <h3 class="text-xl font-bold mb-2">Infrastructures</h3>
               <p class="text-xs text-emerald-100 line-clamp-2">
-                C3 uell ntearis, egnolas nisl, gravida nec, omare id, mi.
+                Aménagement des voies, marchés et équipements collectifs structurants.
               </p>
             </div>
           </div>
@@ -147,7 +152,7 @@
             <div>
               <h3 class="text-xl font-bold mb-2">Agriculture</h3>
               <p class="text-xs text-emerald-100 line-clamp-2">
-                C3 uell ntearis, egnolas nisl, gravida nec, omare id, mi.
+                Appui aux producteurs, valorisation des filières et sécurité alimentaire.
               </p>
             </div>
           </div>
@@ -197,6 +202,16 @@
               </span>
             </div>
           </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <RouterLink 
+            to="/realisations" 
+            class="bg-[#f1ba46] hover:bg-[#e0a935] text-slate-900 font-semibold px-8 py-3 rounded-lg shadow transition-all inline-flex items-center gap-2"
+          >
+            Voir toutes nos réalisations
+            <ArrowRight class="w-4 h-4" />
+          </RouterLink>
         </div>
       </div>
     </section>

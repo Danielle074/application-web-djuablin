@@ -147,9 +147,10 @@
           <img :src="logoDjuablin" alt="Logo Indénié-Djuablin" class="h-16 w-auto bg-white rounded-full p-1" />
           
           <div class="space-y-3">
-            <h3 class="font-bold text-lg text-white">Stay Updated</h3>
+            <h3 class="font-bold text-lg text-white">Restez informé</h3>
             <p class="text-xs sm:text-sm text-emerald-100">
-              subscribe to our newsletter and receive the latest news on products, services & more.
+              Abonnez-vous à notre newsletter pour recevoir les dernières actualités
+              du Conseil Régional de l'Indénié-Djuablin.
             </p>
             
             <!-- Newsletter Input -->
@@ -169,7 +170,7 @@
             </form>
             
             <p class="text-[11px] text-emerald-200/80">
-              By subscribing, you accept the Privacy Policy
+              En vous abonnant, vous acceptez notre politique de confidentialité.
             </p>
           </div>
 
@@ -202,7 +203,7 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/nos-realisations" class="hover:underline hover:text-white transition-colors">
+              <RouterLink to="/realisations" class="hover:underline hover:text-white transition-colors">
                 Nos réalisations
               </RouterLink>
             </li>
@@ -212,23 +213,26 @@
               </RouterLink>
             </li>
             <li>
-              <RouterLink to="/contacts" class="hover:underline hover:text-white transition-colors">
+              <RouterLink to="/contact" class="hover:underline hover:text-white transition-colors">
                 Contacts
               </RouterLink>
             </li>
           </ul>
         </div>
 
-        <!-- Colonne 3: Contact Us -->
+        <!-- Colonne 3: Contact -->
         <div class="lg:col-span-4 space-y-4">
-          <h3 class="font-bold text-lg text-white">Contact Us</h3>
+          <h3 class="font-bold text-lg text-white">Nous contacter</h3>
           <div class="space-y-3 text-sm text-emerald-100">
-            <p>2307 Folon, Côte d'Ivoire<br />11226</p>
+            <p>
+              Siège du Conseil Régional de l'Indénié-Djuablin<br />
+              Abengourou, Côte d'Ivoire
+            </p>
             <p class="flex items-center gap-2 text-emerald-200">
               <Mail class="w-4 h-4" />
-              <span>lorem@folon.com</span>
+              <span>contact@conseil-djuablin.ci</span>
             </p>
-            <p class="font-semibold text-white">+2 011 6114 5741</p>
+            <p class="font-semibold text-white">+225 00 00 00 00</p>
           </div>
         </div>
 
